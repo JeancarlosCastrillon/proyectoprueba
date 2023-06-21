@@ -2,6 +2,7 @@ import React from "react";
 import { CardContains, Content, Text, Title } from "./Styled/StyledDashboard";
 import Cards from "./Cards";
 import DevActivity from "./DevActivity";
+import { Graphics } from "./Graphics";
 
 const Dashboard = () => {
   return (
@@ -17,7 +18,10 @@ const Dashboard = () => {
         <Cards Porcentage = "-2" Label = "$95" Description = "Daily Earnings"/>
         <Cards Porcentage = "-1" Label = "621" Description = "Products"/>
       </CardContains>
-      <DevActivity/>
+      <div style={{display: "flex", justifyContent: "space-between"}}>
+        <DevActivity/>
+        <Graphics/>
+      </div>
     </Content>
   );
 };

@@ -65,7 +65,7 @@ export const ProfileDescription = styled.div`
 
 
 export const ProfileName = styled.p`
-  color: 000;
+  color: #000;
   margin: 0;
   margin-left: 5px;
   letter-spacing: .5px;

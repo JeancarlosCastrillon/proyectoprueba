@@ -1,7 +1,7 @@
 import React from "react";
 import { DevTableContain, Table, TableColumn, TableRow} from "./Styled/StyledDevTable";
 
-const DevTable = () => {
+export const DevTable = () => {
     return (
         <DevTableContain>
           <Table>
@@ -10,28 +10,21 @@ const DevTable = () => {
               <th>COMMIT</th>
               <th>DATE</th>
             </TableColumn>
-            
-            <TableColumn>
-              <TableRow>Ronald Bradley</TableRow>
-              <TableRow>Initial Commit</TableRow>
-              <TableRow>May 6, 2018</TableRow>
-            </TableColumn>
-            
-            <TableColumn>
-              <TableRow>Russel Gibson</TableRow>
-              <TableRow>Main Structure</TableRow>
-              <TableRow>April 22, 2018</TableRow>
-            </TableColumn>
-            
-            <TableColumn>
-              <TableRow>Beverly Armstrong</TableRow>
-              <TableRow>Left Sidebar Adjustments</TableRow>
-              <TableRow>April 15, 2018</TableRow>
-            </TableColumn>
-            
-            </Table>
+            <DevColumn Name = "Ronald Bradley" Commit ="Initial Commit" Date = "May 6, 2018"/>
+            <DevColumn Name = "Russel Gibson" Commit = "Main Structure" Date = "April 22, 2018"/>
+            <DevColumn Name = "Beverly Armstrong" Commit = "Left sidebar adjustments" Date = "April 15, 2018"/>
+        </Table>
         </DevTableContain>
       );
   };
-  
-export default DevTable
+
+
+const DevColumn = ({Name, Commit, Date}) => {
+    return(
+        <TableColumn>
+            <TableRow> {Name} </TableRow>
+            <TableRow> {Commit} </TableRow>
+            <TableRow> {Date} </TableRow>
+        </TableColumn>
+    )
+}

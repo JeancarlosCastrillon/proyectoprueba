@@ -24,7 +24,7 @@ const Header = () => {
           <ProfileImg src={ProfilePhoto} />
           <ProfileDescription>
             <ProfileName>Jean Castrillón</ProfileName>
-            <ProfileRole>Developer</ProfileRole>
+            <ProfileRole>Training</ProfileRole>
           </ProfileDescription>
         </Profile>
       </PersonContainer>

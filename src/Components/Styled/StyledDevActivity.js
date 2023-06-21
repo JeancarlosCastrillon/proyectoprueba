@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const GeneralContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   box-sizing: border-box;
+  margin-left: 10%;
 `;
 
 export const DevelopAct = styled.div`
@@ -14,7 +14,7 @@ export const DevelopAct = styled.div`
   flex-direction: column;
   border: 1px solid #0000003b;
   border-radius: 5px;
-  margin-left: 10%;
+  background-color: #fff;
 `;
 
 export const DevTitle = styled.div`
@@ -25,8 +25,7 @@ export const DevTitle = styled.div`
   font-size: 18px;
   justify-content: flex-start;
   font-weight: 500;
-  margin: 0;
-  margin-left: 30px;
+  padding-left: 30px;
 `;
 
 export const DevPurchases = styled.div`

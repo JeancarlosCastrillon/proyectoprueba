@@ -1,7 +1,7 @@
 import React from "react";
 import { DevPurchases, DevTitle, DevelopAct, GeneralContainer, PurchasesImg } from "./Styled/StyledDevActivity";
 import DevelopImg from '../Images/DevelopImg.png'
-import DevTable from "./DevTable";
+import { DevTable } from "./DevTable";
 
 const DevActivity = () => {
     return (
