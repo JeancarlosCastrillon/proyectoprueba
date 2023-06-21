@@ -24,6 +24,6 @@ export const NavRefer = styled.p`
 export const Links = styled.p`
     display: flex;
     align-items: center;
-    color: #0000003b;
+    color: #0000008b;
     margin-right: 40px;
 `

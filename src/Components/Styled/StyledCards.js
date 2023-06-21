@@ -17,12 +17,13 @@ export const CardValue = styled.p`
     flex-direction: row-reverse;
     padding-right: 50px;
     width: 100%;
-    color: ${props => props.Porcentage < 0 ? 'red' : 'green'};;
+    color: ${({ Color }) => Color || 'green'};
 `
 
 export const CardLabel = styled.p`
     font-size: 30px;
     text-align: center;
+    font-weight: 600;
     height: 100px;
     margin: 0;
 `
@@ -31,4 +32,5 @@ export const CardDescription = styled.p`
     font-size: 16px;
     text-align: center;
     height: 100px;
+    font-weight: 500;
 `

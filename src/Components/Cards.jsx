@@ -5,7 +5,7 @@ import { CardContainer, CardDescription, CardLabel, CardValue } from "./Styled/S
 const Cards = ({Porcentage, Label, Description}) => {
     return(
         <CardContainer>
-            <CardValue>{Porcentage}%</CardValue>
+            <CardValue Color = {Porcentage < 0 ? 'red' : ''}>{Porcentage}%</CardValue>
             <CardLabel>{Label}</CardLabel>
             <CardDescription>{Description}</CardDescription>
         </CardContainer>
